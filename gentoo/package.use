@@ -1,0 +1,6 @@
+sys-kernel/gentoo-sources symlink
+sys-libs/talloc python
+net-fs/samba winbind -client
+net-fs/cifs-utils upcall -acl
+media-gfx/imagemagick perl
+app-admin/rsyslog postgres

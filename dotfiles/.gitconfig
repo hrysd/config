@@ -1,0 +1,25 @@
+[user]
+  name  = Hiroshi Yoshida
+  email = hrysd22@gmail.com
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+[color]
+  ui = auto
+[alias]
+  st = status
+  ci = commit
+  cv = commit -av
+  ch = checkout
+  cb = checkout -b
+  df = diff
+  dc = diff --cached
+  br = branch
+  ba = branch -a
+  rt = remote
+  rv = remote -v
+  l  = log --graph --stat
+[pager]
+  log  = diff-highlight | less
+  show = diff-highlight | less
+  diff = diff-highlight | less

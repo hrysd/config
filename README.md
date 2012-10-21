@@ -1,5 +1,1 @@
-#dotfiles
-
-##installation
-
-`./setup.sh`
+# My Config files
