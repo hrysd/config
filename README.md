@@ -1,1 +1,5 @@
-##dotfiles
+#dotfiles
+
+##installation
+
+`./setup.sh`
