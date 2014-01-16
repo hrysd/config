@@ -7,18 +7,19 @@
 [color]
   ui = auto
 [alias]
-  st = status
+  ba = branch -a
+  br = branch
+  cb = checkout -b
+  ch = checkout
   ci = commit
   cv = commit -av
-  ch = checkout
-  cb = checkout -b
-  df = diff
   dc = diff --cached
-  br = branch
-  ba = branch -a
+  df = diff
+  g  = grep -n
+  l  = log --graph --stat
   rt = remote
   rv = remote -v
-  l  = log --graph --stat
+  st = status
 [pager]
   log  = diff-highlight | less
   show = diff-highlight | less
