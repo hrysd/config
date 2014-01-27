@@ -53,7 +53,7 @@ precmd () {
 }
 
 # prompt
-PROMPT='%B%F{blue}[%~]%f%b%1(v|%B%F{green}%1v%f%b|)%B%F{blue}>%f%b '
+PROMPT='%B%F{blue}[%m:%~]%f%b%1(v|%B%F{green}%1v%f%b|)%B%F{blue}>%f%b '
 
 # etc
 eval "$(rbenv init -)"
