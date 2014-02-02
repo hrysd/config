@@ -20,6 +20,8 @@ app-shells/gentoo-bashcomp
 app-shells/z
 app-shells/zsh
 dev-db/mongodb
+dev-db/oracle-instantclient-basic
+dev-db/oracle-instantclient-sqlplus
 dev-db/postgresql-server
 dev-db/redis
 dev-qt/qtwebkit
