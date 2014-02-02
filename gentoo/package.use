@@ -3,4 +3,6 @@ sys-libs/talloc python
 net-fs/samba winbind -client
 net-fs/cifs-utils upcall -acl
 media-gfx/imagemagick perl
-app-admin/rsyslog postgres
+app-office/libreoffice -webdav -vba -bluetooth
+media-libs/gd fontconfig
+net-misc/networkmanager modemmanager
