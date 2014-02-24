@@ -35,11 +35,13 @@ gnome-extra/nautilus-dropbox
 gnome-extra/synapse
 media-fonts/vlgothic
 media-gfx/gpicview
+media-gfx/graphviz
 net-dns/bind-tools
 net-misc/dhcpcd
 net-misc/networkmanager
 sys-apps/dbus
 sys-apps/systemd
+sys-apps/the_silver_searcher
 sys-firmware/iwl6005-ucode
 sys-kernel/gentoo-sources
 www-client/firefox-bin
