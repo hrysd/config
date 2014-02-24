@@ -21,6 +21,7 @@ setopt auto_cd
 alias be='bundle exec'
 alias bip='bundle install --path vendor/bundle'
 alias gst='git status -s'
+alias ag='ag --pager="less -R"'
 
 # history
 HISTFILE=$HOME/.zsh_history
