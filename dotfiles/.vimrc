@@ -19,6 +19,7 @@ Bundle 'nono/vim-handlebars'
 Bundle 'osyo-manga/vim-over'
 Bundle 'pangloss/vim-javascript'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'rking/ag.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-fugitive'
@@ -45,6 +46,8 @@ set list
 set listchars=tab:»-,trail:~
 
 let loaded_matchparen = 1
+
+set clipboard=unnamedplus
 
 " encoding
 set encoding=utf-8
