@@ -5,6 +5,7 @@ unset RUBYOPT
 case $OSTYPE in
   darwin*)
     export PATH=/usr/local/bin:/usr/bin:$PATH
+    source `brew --prefix`/etc/profile.d/z.sh
   ;;
   linux*)
     source /usr/share/z/z.sh
