@@ -36,6 +36,7 @@ gnome-extra/synapse
 media-fonts/vlgothic
 media-gfx/gpicview
 media-gfx/graphviz
+media-gfx/imagemagick
 net-dns/bind-tools
 net-misc/dhcpcd
 net-misc/networkmanager
