@@ -12,7 +12,7 @@
   cb = checkout -b
   ch = checkout
   ci = commit
-  cv = commit -av
+  cv = commit -v
   dc = diff --cached
   df = diff
   g  = grep -n
