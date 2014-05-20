@@ -10,11 +10,11 @@ Bundle 'gmark/vundle'
 Bundle 'Rename'
 Bundle 'Lucius'
 
+Bundle 'Yggdroot/indentLine'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
-Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'nono/vim-handlebars'
 Bundle 'osyo-manga/vim-over'
 Bundle 'pangloss/vim-javascript'
@@ -88,6 +88,9 @@ let g:airline#extensions#paste#symbol = 'ρ'
 let g:airline#extensions#paste#symbol = 'Þ'
 let g:airline#extensions#paste#symbol = '∥'
 let g:airline#extensions#whitespace#symbol = 'Ξ'
+
+" indentLine
+let g:indentLine_fileTypeExclude = ['help', 'nerdtree']
 
 " QuickFix
 autocmd QuickFixCmdPost *grep* cwindow
