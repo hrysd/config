@@ -95,5 +95,12 @@ let g:airline#extensions#whitespace#symbol = 'Ξ'
 " indentLine
 let g:indentLine_fileTypeExclude = ['help', 'nerdtree']
 
+let g:markdown_fenced_languages = [
+\  'coffee',
+\  'javascript',
+\  'js=javascript',
+\  'ruby',
+\]
+
 " QuickFix
 autocmd QuickFixCmdPost *grep* cwindow
