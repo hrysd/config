@@ -19,7 +19,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'nono/vim-handlebars'
 Plugin 'osyo-manga/vim-over'
 Plugin 'pangloss/vim-javascript'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-bundler'
@@ -67,7 +66,9 @@ set laststatus=2
 set noswapfile
 set nobackup
 filetype plugin on
-au BufNewFile,BufRead *.php set tabstop=4 shiftwidth=4
+
+autocmd BufNewFile,BufRead *.php set tabstop=4 shiftwidth=4
+autocmd BufNewFile,BufRead *.{md,,markdown} set filetype=markdown
 
 " color
 syntax enable
