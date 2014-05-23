@@ -44,6 +44,7 @@ net-misc/dhcpcd
 net-misc/mikutter
 net-misc/netkit-telnetd
 net-misc/networkmanager
+net-misc/whois
 sys-apps/dbus
 sys-apps/systemd
 sys-apps/the_silver_searcher
