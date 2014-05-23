@@ -1,33 +1,35 @@
-set nocompatible
 set backspace=indent,eol,start "backspace が効かない
+
+set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmark/vundle'
+Plugin 'gmarik/Vundle.vim'
 
-Bundle 'Rename'
-Bundle 'Lucius'
+Plugin 'Rename'
+Plugin 'Lucius'
 
-Bundle 'Yggdroot/indentLine'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'bling/vim-airline'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'kien/ctrlp.vim'
-Bundle 'nono/vim-handlebars'
-Bundle 'osyo-manga/vim-over'
-Bundle 'pangloss/vim-javascript'
-Bundle 'plasticboy/vim-markdown'
-Bundle 'rking/ag.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-haml'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-ruby/vim-ruby'
+Plugin 'Yggdroot/indentLine'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'bling/vim-airline'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'kien/ctrlp.vim'
+Plugin 'nono/vim-handlebars'
+Plugin 'osyo-manga/vim-over'
+Plugin 'pangloss/vim-javascript'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'rking/ag.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
+Plugin 'vim-ruby/vim-ruby'
 
+call vundle#end()
 filetype plugin indent on
 
 " keybind
