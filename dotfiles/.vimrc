@@ -97,6 +97,7 @@ let g:indentLine_fileTypeExclude = ['help', 'nerdtree']
 
 let g:markdown_fenced_languages = [
 \  'coffee',
+\  'haml',
 \  'javascript',
 \  'js=javascript',
 \  'ruby',
