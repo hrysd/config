@@ -10,6 +10,7 @@ case $OSTYPE in
   linux*)
     source /usr/share/z/z.sh
     export PATH=~/.bin:$PATH
+    alias ls='ls --color'
   ;;
 esac
 
