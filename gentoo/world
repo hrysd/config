@@ -19,6 +19,7 @@ app-portage/layman
 app-shells/gentoo-bashcomp
 app-shells/z
 app-shells/zsh
+app-text/tree
 dev-db/mongodb
 dev-db/oracle-instantclient-basic
 dev-db/oracle-instantclient-sqlplus
