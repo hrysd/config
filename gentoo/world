@@ -45,6 +45,7 @@ net-misc/dhcpcd
 net-misc/mikutter
 net-misc/netkit-telnetd
 net-misc/networkmanager
+net-misc/ntp
 net-misc/whois
 sys-apps/dbus
 sys-apps/systemd
