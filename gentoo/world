@@ -21,6 +21,7 @@ app-shells/z
 app-shells/zsh
 app-text/tree
 dev-db/mongodb
+dev-db/mysql
 dev-db/oracle-instantclient-basic
 dev-db/oracle-instantclient-sqlplus
 dev-db/postgresql-server
