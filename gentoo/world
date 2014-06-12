@@ -50,6 +50,7 @@ net-misc/networkmanager
 net-misc/ntp
 net-misc/whois
 sys-apps/dbus
+sys-apps/iproute2
 sys-apps/systemd
 sys-apps/the_silver_searcher
 sys-firmware/iwl6005-ucode
