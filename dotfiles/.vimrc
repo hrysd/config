@@ -28,6 +28,8 @@ Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
 
+set rtp+=$GOROOT/misc/vim
+
 call vundle#end()
 filetype plugin indent on
 

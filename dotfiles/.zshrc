@@ -6,6 +6,7 @@ case $OSTYPE in
   darwin*)
     export PATH=/usr/local/bin:/usr/bin:$PATH
     source `brew --prefix`/etc/profile.d/z.sh
+    export GOROOT=/usr/local/opt/go/libexec
   ;;
   linux*)
     source /usr/share/z/z.sh
@@ -76,4 +77,4 @@ eval "$(rbenv init -)"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 export GOPATH=$HOME/.go
-export PATH=$GOPATH/bin:$PATH
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
