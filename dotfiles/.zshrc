@@ -56,17 +56,10 @@ precmd () {
   [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
 
-function peco-src () {
-  local selected_dir=$(ghq list --full-path | peco --query "$LBUFFER")
-  if [ -n "$selected_dir" ]; then
-    BUFFER="cd ${selected_dir}"
-    zle accept-line
-  fi
-  zle clear-screen
-}
+# http://r7kamura.github.io/2014/06/21/ghq.html
+function p() { peco | while read LINE; do $@ $LINE; done }
 
-zle -N peco-src
-bindkey '^E' peco-src
+alias src='ghq list -p | p cd'
 
 # prompt
 PROMPT='%B%F{blue}[%m:%~]%f%b%1(v|%B%F{green}%1v%f%b|)%B%F{blue}>%f%b '
