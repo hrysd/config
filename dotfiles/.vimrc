@@ -11,6 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Rename'
 Plugin 'Lucius'
 
+Plugin 'Shougo/unite.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
@@ -40,6 +41,9 @@ imap <C-j> <esc>
 " normal mode
 nmap nt :NERDTreeToggle
 nmap gt :GitGutterToggle
+
+nnoremap <silent> uf :Unite file<CR>
+nnoremap <silent> ub :Unite buffer<CR>
 
 " display
 set number
