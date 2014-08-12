@@ -16,7 +16,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'nono/vim-handlebars'
 Plugin 'osyo-manga/vim-over'
 Plugin 'pangloss/vim-javascript'
@@ -65,6 +65,7 @@ set autoindent
 set tabstop=2
 set shiftwidth=2
 
+set showmatch
 " statusbar
 set laststatus=2
 
