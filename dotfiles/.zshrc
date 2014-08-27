@@ -1,5 +1,4 @@
 #! /bin/zsh
-unset RUBYOPT
 
 # homebrew
 case $OSTYPE in
