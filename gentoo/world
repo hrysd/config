@@ -24,6 +24,7 @@ dev-db/mongodb
 dev-db/mysql
 dev-db/postgresql-server
 dev-db/redis
+dev-lang/rust
 dev-qt/qtwebkit
 dev-ruby/rbenv
 dev-ruby/ruby-build
@@ -42,6 +43,7 @@ media-gfx/imagemagick
 net-dns/bind-tools
 net-im/skype
 net-misc/dhcpcd
+net-misc/memcached
 net-misc/mikutter
 net-misc/netkit-telnetd
 net-misc/networkmanager

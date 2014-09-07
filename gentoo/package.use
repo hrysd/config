@@ -6,3 +6,4 @@ media-gfx/imagemagick perl
 app-office/libreoffice -webdav -vba -bluetooth
 media-libs/gd fontconfig
 net-misc/networkmanager modemmanager
+dev-lang/rust vim-syntax
