@@ -27,6 +27,7 @@ Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'rust-lang/rust', {'rtp': 'src/etc/vim'}
 
 set rtp+=$GOROOT/misc/vim
 
