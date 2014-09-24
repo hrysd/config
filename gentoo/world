@@ -1,6 +1,7 @@
 app-admin/ansible
 app-admin/apache-tools
 app-admin/eclean-kernel
+app-admin/eselect-rust
 app-admin/rsyslog
 app-admin/sudo
 app-editors/gvim
@@ -63,3 +64,4 @@ www-client/phantomjs-bin
 www-plugins/google-talkplugin
 x11-base/xorg-x11
 x11-misc/shutter
+x11-misc/xclip
