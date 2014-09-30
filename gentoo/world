@@ -11,6 +11,7 @@ app-emulation/vagrant
 app-emulation/virtualbox
 app-i18n/mozc
 app-i18n/nkf
+app-misc/jq
 app-misc/tmux
 app-office/libreoffice
 app-portage/eix
