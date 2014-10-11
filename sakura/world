@@ -9,7 +9,6 @@ app-portage/eix
 app-portage/flaggie
 app-portage/gentoolkit
 app-portage/layman
-dev-lang/php
 dev-libs/apr-util
 dev-vcs/git
 mail-mta/postfix

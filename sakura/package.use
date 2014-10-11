@@ -1,4 +1,2 @@
 sys-kernel/gentoo-sources symlink
-dev-lang/php curl fpm
-app-admin/eselect-php fpm
 dev-libs/apr-util openssl
