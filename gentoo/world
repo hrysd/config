@@ -59,6 +59,7 @@ sys-apps/the_silver_searcher
 sys-firmware/iwl6005-ucode
 sys-kernel/gentoo-sources
 sys-process/htop
+sys-process/lsof
 www-client/firefox-bin
 www-client/google-chrome
 www-client/phantomjs-bin
