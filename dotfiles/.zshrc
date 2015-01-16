@@ -21,6 +21,7 @@ setopt auto_cd
 
 # alias
 alias be='bundle exec'
+alias bo='bundle open'
 alias bip='bundle install --path vendor/bundle'
 alias gst='git status -s'
 alias ag='ag --pager="less -R"'
