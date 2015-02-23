@@ -64,6 +64,10 @@ alias src='ghq list -p | p cd'
 # http://k0kubun.hatenablog.com/entry/2014/07/06/033336
 alias -g B='`git branch | peco | sed -e "s/^\*[ ]*//g"`'
 
+function vig() {
+  vim $(git status -s | sed -e "s/^[MA? ]*//g" | peco)
+}
+
 # prompt
 PROMPT='%B%F{blue}[%m:%~]%f%b%1(v|%B%F{green}%1v%f%b|)%B%F{blue}>%f%b '
 RPROMPT='%B%F{blue}[%*]%f%b'
