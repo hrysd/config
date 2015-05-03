@@ -3,7 +3,7 @@
 # homebrew
 case $OSTYPE in
   darwin*)
-    export PATH=/usr/local/bin:/usr/bin:/Applications/Android\ Studio.app/sdk/platform-tools:$PATH
+    export PATH=/usr/local/bin:/usr/bin:$HOME/sdk/platform-tools:$PATH
     source `brew --prefix`/etc/profile.d/z.sh
     export GOROOT=/usr/local/opt/go/libexec
   ;;
