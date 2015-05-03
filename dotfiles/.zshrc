@@ -78,3 +78,6 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 export GOPATH=$HOME/.go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+# direnv
+eval "$(direnv hook zsh)"
