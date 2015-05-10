@@ -76,8 +76,8 @@ RPROMPT='%B%F{blue}[%*]%f%b'
 eval "$(rbenv init -)"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-export GOPATH=$HOME/.go
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export GOPATH=$HOME
+export PATH=$PATH:~/bin
 
 # direnv
 eval "$(direnv hook zsh)"
