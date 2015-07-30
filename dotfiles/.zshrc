@@ -65,7 +65,7 @@ alias src='ghq list -p | p cd'
 alias -g B='`git branch | peco | sed -e "s/^\*[ ]*//g"`'
 
 function vig() {
-  vim $(git status -s | sed -e "s/^[MA? ]*//g" | peco)
+  vim $(git status -s | sed -e "s/^[MAU? ]*//g" | peco)
 }
 
 # prompt
