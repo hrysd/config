@@ -18,17 +18,15 @@ Plugin 'cespare/vim-toml'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'evanmiller/nginx-vim-syntax'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'nono/vim-handlebars'
 Plugin 'pangloss/vim-javascript'
 Plugin 'rking/ag.vim'
+Plugin 'rust-lang/rust.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-haml'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-ruby/vim-ruby'
-Plugin 'rust-lang/rust.vim'
 
 set rtp+=$GOROOT/misc/vim
 
