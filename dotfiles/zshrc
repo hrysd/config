@@ -73,12 +73,6 @@ RPROMPT='%B%F{blue}[%*]%f%b'
 
 # etc
 eval "$(rbenv init -)"
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-
-export GOPATH=$HOME
-export PATH=$PATH:~/bin
-
-# direnv
 eval "$(direnv hook zsh)"
 
 # The next line updates PATH for the Google Cloud SDK.
