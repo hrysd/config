@@ -39,10 +39,6 @@ imap <C-j> <esc>
 
 " normal mode
 nmap nt :NERDTreeToggle
-nmap gt :GitGutterToggle
-
-nnoremap <silent> uf :Unite file<CR>
-nnoremap <silent> ub :Unite buffer<CR>
 
 " display
 set number
