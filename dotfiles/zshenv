@@ -1,6 +1,11 @@
-export PATH=$HOME/homebrew/bin:$PATH
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-export PATH=$PATH:~/bin
-
 export HOMEBREW_CASK_OPTS="--binarydir=$HOME/bin --caskroom=$HOME/homebrew-cask/Caskroom"
 export GOPATH=$HOME
+
+case $OSTYPE in
+  darwin*)
+    export PATH=$HOME/homebrew/bin:$PATH
+  ;;
+esac
+
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=$PATH:~/bin
