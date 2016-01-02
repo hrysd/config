@@ -71,6 +71,7 @@ filetype plugin on
 
 autocmd BufNewFile,BufRead *.php set tabstop=4 shiftwidth=4
 autocmd BufNewFile,BufRead *.{md,,markdown} set filetype=markdown
+autocmd BufNewFile,BufRead *.hbs set filetype=haml
 
 " color
 syntax enable
