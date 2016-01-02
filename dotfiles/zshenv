@@ -1,9 +1,9 @@
-export HOMEBREW_CASK_OPTS="--binarydir=$HOME/bin --caskroom=$HOME/homebrew-cask/Caskroom"
 export GOPATH=$HOME
 
 case $OSTYPE in
   darwin*)
     export PATH=$HOME/homebrew/bin:$PATH
+    export HOMEBREW_CASK_OPTS="--binarydir=$HOME/bin --caskroom=$HOME/homebrew-cask/Caskroom"
   ;;
 esac
 
