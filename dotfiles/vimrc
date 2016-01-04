@@ -11,6 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Rename'
 Plugin 'Lucius'
 
+Plugin 'Shougo/unite.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
