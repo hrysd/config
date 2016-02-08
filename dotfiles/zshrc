@@ -1,6 +1,5 @@
 case $OSTYPE in
   darwin*)
-    source `brew --prefix`/etc/profile.d/z.sh
     function code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*; }
   ;;
   linux*)
