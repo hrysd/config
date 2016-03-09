@@ -1,7 +1,4 @@
 case $OSTYPE in
-  darwin*)
-    function code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $*; }
-  ;;
   linux*)
     source /usr/share/z/z.sh
     alias ls='ls --color'
