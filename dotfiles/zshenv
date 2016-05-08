@@ -8,5 +8,6 @@ case $OSTYPE in
 esac
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$PATH:~/bin
 export PATH=$PATH:/usr/local/bin
