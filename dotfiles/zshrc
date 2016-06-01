@@ -22,8 +22,10 @@ HISTFILE=$HOME/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
 
-setopt hist_ignore_dups
-setopt share_history
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_FIND_NO_DUPS
 
 # load comletion file
 fpath=(~/.zsh/completion $fpath)
@@ -58,6 +60,15 @@ alias -g B='`git branch | peco | sed -e "s/^\*[ ]*//g"`'
 function vig() {
   vim $(git status -s | sed -e "s/^[MAU? ]*//g" | peco)
 }
+
+function peco_select_history() {
+  BUFFER=$(fc -l -n 1 | tail -r | awk '!a[$0]++' | peco --query "$LBUFFER")
+  CURSOR=$#BUFFER
+  zle -R -c
+}
+
+zle -N peco_select_history
+bindkey '^R' peco_select_history
 
 # prompt
 PROMPT='%B%F{blue}[%m:%~]%f%b%1(v|%B%F{green}%1v%f%b|)%B%F{blue}>%f%b '
