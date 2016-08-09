@@ -76,4 +76,5 @@ RPROMPT='%B%F{blue}[%*]%f%b'
 
 # etc
 eval "$(rbenv init -)"
+eval "$(pyenv init -)"
 eval "$(direnv hook zsh)"
