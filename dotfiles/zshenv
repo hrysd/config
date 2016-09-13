@@ -2,7 +2,7 @@ export GOPATH=$HOME
 
 case $OSTYPE in
   darwin*)
-    export HOMEBREW_CASK_OPTS="--binarydir=$HOME/bin --caskroom=$HOME/homebrew-cask/Caskroom"
+    export HOMEBREW_CASK_OPTS="--caskroom=$HOME/homebrew-cask/Caskroom"
     export ANDROID_HOME=$HOME/Library/Android/sdk
     export PYENV_ROOT=/Users/hrysd/homebrew/var/pyenv
 
