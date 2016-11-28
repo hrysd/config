@@ -112,7 +112,7 @@ let g:markdown_fenced_languages = [
 \]
 
 " Unit
-noremap <C-o> :Unite buffer<CR>
+nnoremap <Space>b :Unite buffer<CR>
 
 " CtrlP
 if executable('ag')
