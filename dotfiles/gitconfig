@@ -17,6 +17,7 @@
   df = diff
   g  = grep -n
   l  = log --stat --date=iso --pretty=format:'%Cred%h %Cgreen%ad %Cblue%cn %Creset%s %C(auto)%d%Creset'
+  lp = log -p --stat --date=iso --pretty=format:'%Cred%h %Cgreen%ad %Cblue%cn %Creset%s %C(auto)%d%Creset'
   rt = remote
   rv = remote -v
   st = status
