@@ -2,16 +2,15 @@ export GOPATH=$HOME
 
 case $OSTYPE in
   darwin*)
-    export ANDROID_HOME=$HOME/Library/Android/sdk
+    setopt no_global_rcs
 
-    export PATH=$PYENV_ROOT/bin:$PATH
+    export PATH=/usr/local/bin:$PATH:/usr/sbin:/sbin
     export PATH=$HOME/homebrew/bin:$PATH
-    export PATH=$PATH:$ANDROID_HOME/platform-tools
     export PATH=$PATH:$HOME/homebrew/share/git-core/contrib/diff-highlight
+    export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
   ;;
 esac
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$PATH:~/bin
-export PATH=$PATH:/usr/local/bin
