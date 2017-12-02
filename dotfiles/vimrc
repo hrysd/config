@@ -33,6 +33,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'elixir-editors/vim-elixir'
 
 set rtp+=$GOROOT/misc/vim
 
