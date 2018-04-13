@@ -8,7 +8,10 @@ case $OSTYPE in
     export PATH=$HOME/homebrew/bin:$PATH
     export PATH=$PATH:$HOME/homebrew/share/git-core/contrib/diff-highlight
     export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-  ;;
+    ;;
+  linux*)
+    export PATH=$PATH:/usr/share/doc/git/contrib/diff-highlight
+    ;;
 esac
 
 export PATH=$HOME/.nodebrew/current/bin:$PATH
