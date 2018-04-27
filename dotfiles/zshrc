@@ -44,26 +44,32 @@ precmd () {
   [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
 
-# http://r7kamura.github.io/2014/06/21/ghq.html
-function p() { peco | while read LINE; do $@ $LINE; done }
+src() {
+  local dir
 
-alias src='ghq list -p | p cd'
+  dir="$(ghq list -p | fzf +s --tac -e --reverse)"
 
-# http://k0kubun.hatenablog.com/entry/2014/07/06/033336
-alias -g B='`git branch | peco | sed -e "s/^\*[ ]*//g"`'
-
-function vig() {
-  vim $(git status -s | sed -e "s/^[MAU? ]*//g" | peco)
+  if [ -n "$dir" ]; then
+    cd $dir
+  fi
 }
 
-function peco_select_history() {
-  BUFFER=$(fc -l -n 1 | tail -r | awk '!a[$0]++' | peco --query "$LBUFFER")
-  CURSOR=$#BUFFER
-  zle -R -c
+vig() {
+  local file
+
+  file="$(git status -s | sed -e "s/^[MAU? ]*//g" | fzf +s --tac -e --reverse --preview 'head -50 {}' --preview-window down)"
+
+  if [ -n "$file" ]; then
+    vim $file
+  fi
 }
 
-zle -N peco_select_history
-bindkey '^R' peco_select_history
+fzf_history() {
+  zle -U $(fc -l -n 1 | awk '!a[$0]++' | fzf +s --tac -e --reverse)
+}
+
+zle -N fzf_history
+bindkey '^R' fzf_history
 
 # prompt
 PROMPT='%B%F{blue}[%~]%f%b%1(v|%B%F{green}%1v%f%b|)%B%F{blue}>%f%b '
