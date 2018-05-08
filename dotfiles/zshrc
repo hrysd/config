@@ -65,7 +65,8 @@ vig() {
 }
 
 fzf_history() {
-  zle -U $(fc -l -n 1 | awk '!a[$0]++' | fzf +s --tac -e --reverse)
+  BUFFER=$(fc -l -n 1 | awk '!a[$0]++' | fzf +s --tac -e --reverse)
+  CURSOR=$#BUFFER
 }
 
 zle -N fzf_history
