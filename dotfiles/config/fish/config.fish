@@ -1,3 +1,6 @@
+set -x PATH $HOME/.fzf/bin $PATH
+set -x GOPATH $HOME
+
 source ~/.asdf/asdf.fish
 
 function src
