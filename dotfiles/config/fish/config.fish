@@ -3,6 +3,8 @@ set -x GOPATH $HOME
 
 source ~/.asdf/asdf.fish
 
+abbr -a dc='docker-compose'
+
 function src
   ghq list -p | fzf +s -e --tac --reverse | read dir
 
