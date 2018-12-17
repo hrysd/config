@@ -1,7 +1,12 @@
-set -x PATH $HOME/.fzf/bin $PATH
 set -x GOPATH $HOME
 
-source ~/.asdf/asdf.fish
+switch (uname)
+  case Linux
+    set -x PATH $HOME/.fzf/bin $PATH
+    source ~/.asdf/asdf.fish
+  case Darwin
+    source ~/homebrew/opt/asdf/asdf.fish
+end
 
 abbr -a dc='docker-compose'
 
