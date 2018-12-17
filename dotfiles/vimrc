@@ -1,42 +1,55 @@
+set encoding=utf-8
 set backspace=indent,eol,start "backspace が効かない
 
-set nocompatible
-filetype off
+if &compatible
+  set nocompatible
+endif
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Required:
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
-Plugin 'gmarik/Vundle.vim'
+" Required:
+if dein#load_state('~/.cache/dein')
+  call dein#begin('~/.cache/dein')
 
-Plugin 'Rename'
-Plugin 'Lucius'
+  " Let dein manage dein
+  " Required:
+  call dein#add('~/.cache/dein/repos/github.com/Shougo/dein.vim')
 
-Plugin 'Yggdroot/indentLine'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'cespare/vim-toml'
-Plugin 'dracula/vim'
-Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'evanmiller/nginx-vim-syntax'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'othree/yajs.vim'
-Plugin 'posva/vim-vue'
-Plugin 'rking/ag.vim'
-Plugin 'rust-lang/rust.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'slim-template/vim-slim'
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-surround'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'elixir-editors/vim-elixir'
+  call dein#add('Yggdroot/indentLine')
+  call dein#add('airblade/vim-gitgutter')
+  call dein#add('dracula/vim')
+  call dein#add('ekalinin/Dockerfile.vim')
+  call dein#add('othree/yajs.vim')
+  call dein#add('posva/vim-vue')
+  call dein#add('rust-lang/rust.vim')
+  call dein#add('scrooloose/nerdtree')
+  call dein#add('tpope/vim-fugitive')
+  call dein#add('tpope/vim-rails')
+  call dein#add('tpope/vim-surround')
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
+  call dein#add('vim-ruby/vim-ruby')
+  call dein#add('elixir-editors/vim-elixir')
 
-set rtp+=$GOROOT/misc/vim
+  " Required:
+  call dein#end()
+  call dein#save_state()
+endif
 
-call vundle#end()
+" Required:
 filetype plugin indent on
+syntax enable
+
+let g:dracula_italic = 0
+color dracula
+highlight Normal ctermbg=None
+
+
+" If you want to install not installed plugins on startup.
+"if dein#check_install()
+"  call dein#install()
+"endif
 
 " keybind
 " insert mode
@@ -56,9 +69,6 @@ let loaded_matchparen = 1
 
 set clipboard=unnamedplus
 
-" encoding
-set encoding=utf-8
-
 " tab
 set expandtab
 set autoindent
@@ -72,17 +82,10 @@ set laststatus=2
 " file
 set noswapfile
 set nobackup
-filetype plugin on
 
 autocmd BufNewFile,BufRead *.php set tabstop=4 shiftwidth=4
 autocmd BufNewFile,BufRead *.{md,,markdown} set filetype=markdown
 autocmd BufNewFile,BufRead *.hbs set filetype=haml
-
-" color
-syntax enable
-highlight clear SignColumn
-set t_Co=256
-color dracula
 
 " airline
 let g:airline_theme= 'bubblegum'
