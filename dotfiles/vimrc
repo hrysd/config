@@ -18,7 +18,7 @@ if dein#load_state('~/.cache/dein')
 
   call dein#add('Yggdroot/indentLine')
   call dein#add('airblade/vim-gitgutter')
-  call dein#add('dracula/vim')
+  call dein#add('cocopon/iceberg.vim')
   call dein#add('ekalinin/Dockerfile.vim')
   call dein#add('othree/yajs.vim')
   call dein#add('posva/vim-vue')
@@ -41,10 +41,7 @@ endif
 filetype plugin indent on
 syntax enable
 
-let g:dracula_italic = 0
-color dracula
-highlight Normal ctermbg=None
-
+color iceberg
 
 " If you want to install not installed plugins on startup.
 "if dein#check_install()
