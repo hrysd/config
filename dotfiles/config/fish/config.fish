@@ -5,6 +5,8 @@ switch (uname)
     set -x PATH $HOME/.fzf/bin $PATH
     source ~/.asdf/asdf.fish
   case Darwin
+    set -x HOMEBREW_PREFIX $HOME/homebrew
+    set -x PATH $HOME/homebrew/bin $HOME/homebrew/share/git-core/contrib/diff-highlight $PATH
     source ~/homebrew/opt/asdf/asdf.fish
 end
 
