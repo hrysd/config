@@ -85,7 +85,7 @@ autocmd BufNewFile,BufRead *.{md,,markdown} set filetype=markdown
 autocmd BufNewFile,BufRead *.hbs set filetype=haml
 
 " airline
-let g:airline_theme= 'bubblegum'
+let g:airline_theme= 'iceberg'
 
 let g:airline_left_sep = '»'
 let g:airline_left_sep = '▶'
