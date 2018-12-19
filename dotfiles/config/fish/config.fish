@@ -27,3 +27,15 @@ end
 function fish_user_key_bindings
   bind \cr _fzf_history
 end
+
+function fish_prompt
+	set -l home_escaped (echo -n $HOME | sed 's/\//\\\\\//g')
+  set -l pwd (echo -n $PWD | sed "s/^$home_escaped/~/" | sed 's/ /%20/g')
+  set -l prompt_symbol '>'
+
+  printf "[%s:%s%s%s]%s " $USER (set_color $fish_color_cwd) $pwd (set_color normal) $prompt_symbol
+end
+
+function fish_right_prompt
+  printf "[%s]" (date '+%H:%M:%S')
+end
