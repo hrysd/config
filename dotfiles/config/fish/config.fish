@@ -12,6 +12,11 @@ end
 
 abbr -a dc='docker-compose'
 
+function _merge_history --on-event fish_preexec
+  history --save
+  history --merge
+end
+
 function src
   ghq list -p | fzf +s -e --tac --reverse | read dir
 
@@ -19,6 +24,8 @@ function src
 end
 
 function _fzf_history
+  _merge_history
+
   history | fzf +s -e --tac --reverse | read cmd
 
   commandline $cmd
