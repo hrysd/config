@@ -79,3 +79,5 @@ RPROMPT='%B%F{blue}[%*]%f%b'
 # etc
 eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
+
+. $HOME/.asdf/asdf.sh
