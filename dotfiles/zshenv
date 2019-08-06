@@ -7,13 +7,17 @@ case $OSTYPE in
     export PATH=/usr/local/bin:$PATH:/usr/sbin:/sbin
     export PATH=$HOME/homebrew/bin:$PATH
     export PATH=$PATH:$HOME/homebrew/share/git-core/contrib/diff-highlight
-    export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+    export PATH="$PATH:$HOME/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+    . ~/homebrew/opt/asdf/asdf.sh
+    . ~/homebrew/etc/bash_completion.d/asdf.bash
     ;;
   linux*)
     export PATH=$PATH:/usr/share/doc/git/contrib/diff-highlight
+
+    . $HOME/.asdf/asdf.sh
     ;;
 esac
 
-export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$PATH:~/bin
