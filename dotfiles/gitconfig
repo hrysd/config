@@ -1,6 +1,5 @@
 [user]
   name  = Hiroshi Yoshida
-  email = hrysd22@gmail.com
 [core]
   editor = vim
   excludesfile = ~/.gitignore
@@ -29,3 +28,7 @@
   helper = store
 [ghq]
   root = ~/src
+[include]
+  path = ~/.gitconfig.local
+[includeIf "gitdir:~/src/github.com/"]
+  path = ~/src/github.com/.gitconfig
