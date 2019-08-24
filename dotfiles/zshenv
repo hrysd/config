@@ -14,6 +14,7 @@ case $OSTYPE in
     ;;
   linux*)
     export PATH=$PATH:/usr/share/doc/git/contrib/diff-highlight
+    export PATH=$PATH:$HOME/.fzf/bin
 
     . $HOME/.asdf/asdf.sh
     ;;
