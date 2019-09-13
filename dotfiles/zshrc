@@ -28,22 +28,6 @@ fpath=(~/.zsh/completion $fpath)
 autoload -U compinit
 compinit -u
 
-# vcs
-autoload -Uz vcs_info
-
-zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' stagedstr "+"
-zstyle ':vcs_info:*' unstagedstr "!"
-zstyle ':vcs_info:*' formats '(%b%c%u)'
-zstyle ':vcs_info:*' actionformats '(%b|%a%c%u)'
-
-precmd () {
-  psvar=()
-  LANG=en_US.UTF-8 vcs_info
-  [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
-}
-
 src() {
   local dir
 
@@ -72,6 +56,4 @@ fzf_history() {
 zle -N fzf_history
 bindkey '^R' fzf_history
 
-# prompt
-PROMPT='%B%F{blue}[%~]%f%b%1(v|%B%F{green}%1v%f%b|)%B%F{blue}>%f%b '
-RPROMPT='%B%F{blue}[%*]%f%b'
+eval "$(starship init zsh)"
