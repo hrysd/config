@@ -52,6 +52,7 @@ imap <C-j> <esc>
 
 " normal mode
 nmap nt :NERDTreeToggle
+nmap <C-p> :GFiles<CR>
 
 " display
 set number
