@@ -1,0 +1,16 @@
+add_newline = false
+
+prompt_order = [
+  "directory",
+  "git_branch",
+  "git_state",
+  "git_status",
+  "time",
+  "cmd_duration",
+  "line_break",
+  "character"
+]
+
+[time]
+disabled = false
+format = "🕙 [%T]"
