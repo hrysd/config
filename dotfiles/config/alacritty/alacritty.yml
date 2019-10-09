@@ -3,7 +3,9 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
-#env:
+env:
+  LC_CTYPE: en_US.UTF-8
+  LANG: en_US.UTF-8
   # TERM variable
   #
   # This value is used to set the `$TERM` environment variable for
@@ -87,14 +89,14 @@ tabspaces: 8
 # Font configuration (changes require restart)
 font:
   # Normal (roman) font face
-  #normal:
+  normal:
     # Font family
     #
     # Default:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    #family: Noto Mono
+    family: "Noto Mono for Powerline"
 
     # The `style` can be specified to pick a specific face.
     #style: Regular
