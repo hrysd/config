@@ -1,6 +1,7 @@
 add_newline = false
 
 prompt_order = [
+  "kubernetes",
   "directory",
   "git_branch",
   "git_state",
@@ -14,3 +15,8 @@ prompt_order = [
 [time]
 disabled = false
 format = "🕙 [%T]"
+
+[kubernetes]
+symbol = "⛵ "
+style = "dim green"
+disabled = false
