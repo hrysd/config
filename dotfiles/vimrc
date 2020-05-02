@@ -32,7 +32,12 @@ if dein#load_state($HOME . '/.cache/dein')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('vim-ruby/vim-ruby')
 
-  call dein#add($HOME . '/homebrew/opt/fzf')
+  if has('mac')
+    call dein#add($HOME . '/homebrew/opt/fzf')
+  elseif has('unix')
+    call dein#add($HOME . '/.fzf')
+  end
+
   call dein#add('junegunn/fzf.vim')
 
   " Required:
