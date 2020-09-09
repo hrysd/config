@@ -20,6 +20,8 @@
   rt = remote
   rv = remote -v
   st = status
+[pull]
+	rebase = false
 [pager]
   log  = diff-highlight | less
   show = diff-highlight | less
