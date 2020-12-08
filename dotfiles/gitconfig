@@ -3,6 +3,7 @@
 [core]
   editor = vim
   excludesfile = ~/.gitignore
+  pager = delta
 [color]
   ui = auto
 [alias]
@@ -21,15 +22,14 @@
   rv = remote -v
   st = status
 [pull]
-	rebase = false
-[pager]
-  log  = diff-highlight | less
-  show = diff-highlight | less
-  diff = diff-highlight | less
+  rebase = false
 [credential]
   helper = store
 [ghq]
   root = ~/src
+[delta]
+  line-numbers = true
+  side-by-side = true
 [include]
   path = ~/.gitconfig.local
 [includeIf "gitdir:~/src/github.com/"]
