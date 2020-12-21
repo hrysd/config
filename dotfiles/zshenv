@@ -13,6 +13,11 @@ case $OSTYPE in
   linux*)
     export PATH=$PATH:$HOME/.fzf/bin
 
+    if uname -r | grep -sq microsoft; then
+      export PATH="$PATH:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin"
+      export PATH="$PATH:/mnt/c/Users/hrysd/AppData/Local/Programs/Microsoft VS Code/bin"
+    fi
+
     . $HOME/.asdf/asdf.sh
     ;;
 esac
