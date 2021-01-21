@@ -31,6 +31,7 @@ if dein#load_state($HOME . '/.cache/dein')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('vim-ruby/vim-ruby')
+  call dein#add('sonph/onehalf', {'rtp': 'vim/'})
 
   if has('mac')
     call dein#add($HOME . '/homebrew/opt/fzf')
@@ -49,7 +50,7 @@ endif
 filetype plugin indent on
 syntax enable
 
-colorscheme nord
+colorscheme onehalfdark
 
 " keybind
 " insert mode
@@ -89,7 +90,7 @@ autocmd BufNewFile,BufRead *.{md,,markdown} set filetype=markdown
 autocmd BufNewFile,BufRead *.hbs set filetype=haml
 
 " airline
-let g:airline_theme= 'nord'
+let g:airline_theme= 'onehalfdark'
 let g:airline_powerline_fonts = 1
 
 " indentLine
