@@ -103,6 +103,7 @@ window:
 
 # Font configuration
 font:
+  size: 13
   # Normal (roman) font face
   normal:
     # Font family
