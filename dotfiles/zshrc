@@ -8,8 +8,7 @@ alias be='bundle exec'
 alias bo='bundle open'
 alias bip='bundle install --path vendor/bundle'
 alias gst='git status -s'
-alias dc='docker-compose'
-alias dr='docker-compose run'
+alias dc='docker compose'
 
 # history
 HISTFILE=$HOME/.zsh_history
