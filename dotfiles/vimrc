@@ -33,12 +33,7 @@ if dein#load_state($HOME . '/.cache/dein')
   call dein#add('vim-ruby/vim-ruby')
   call dein#add('sonph/onehalf', {'rtp': 'vim/'})
 
-  if has('mac')
-    call dein#add($HOME . '/homebrew/opt/fzf')
-  elseif has('unix')
-    call dein#add($HOME . '/.fzf')
-  end
-
+  call dein#add('junegunn/fzf', {'build': './install --bin'})
   call dein#add('junegunn/fzf.vim')
 
   " Required:
@@ -97,7 +92,6 @@ let g:airline_powerline_fonts = 1
 let g:indentLine_fileTypeExclude = ['help', 'nerdtree']
 
 let g:markdown_fenced_languages = [
-\  'coffee',
 \  'haml',
 \  'javascript',
 \  'js=javascript',
