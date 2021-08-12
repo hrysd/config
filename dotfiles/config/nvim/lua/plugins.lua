@@ -8,6 +8,11 @@ require'packer'.startup(function()
   use 'airblade/vim-gitgutter'
 
   use 'arcticicestudio/nord-vim'
+
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
 end)
 
 vim.cmd[[colorscheme nord]]
