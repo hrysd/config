@@ -3,6 +3,7 @@ require 'plugins'
 vim.api.nvim_set_keymap('i', '<c-j>', '<esc>', { noremap = true })
 
 vim.api.nvim_set_keymap('n', 'nt', ':NERDTreeToggle', { noremap = true })
+vim.api.nvim_set_keymap('n', '<c-p>', ':Telescope find_files', { noremap = true })
 
 vim.api.nvim_set_option('encoding', 'utf-8')
 

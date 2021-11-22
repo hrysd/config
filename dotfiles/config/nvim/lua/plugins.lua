@@ -1,6 +1,7 @@
-vim.cmd[[packadd packer.nvim]]
+vim.cmd 'packadd packer.nvim'
+vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile'
 
-require'packer'.startup(function()
+require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use 'preservim/nerdtree'
 
@@ -11,7 +12,8 @@ require'packer'.startup(function()
 
   use {
     'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { {'nvim-lua/plenary.nvim'} },
+    config = 'require"config.telescope"'
   }
 end)
 
