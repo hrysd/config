@@ -5,6 +5,14 @@ vim.api.nvim_set_keymap('i', '<c-j>', '<esc>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'nt', ':NERDTreeToggle', { noremap = true })
 vim.api.nvim_set_keymap('n', '<c-p>', ':Telescope find_files', { noremap = true })
 
-vim.api.nvim_set_option('encoding', 'utf-8')
+vim.wo.number = true
+vim.wo.cursorline = true
 
-vim.api.nvim_win_set_option(0, 'number', true)
+vim.opt.encoding = 'utf-8'
+
+vim.opt.list = true
+vim.opt.listchars = { trail = '~', tab = '>~' }
+vim.opt.swapfile = false
+
+vim.opt.tabstop = 2
+vim.opt.expandtab = true
