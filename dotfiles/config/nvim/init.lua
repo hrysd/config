@@ -3,7 +3,7 @@ require 'plugins'
 vim.api.nvim_set_keymap('i', '<c-j>', '<esc>', { noremap = true })
 
 vim.api.nvim_set_keymap('n', 'nt', ':NERDTreeToggle', { noremap = true })
-vim.api.nvim_set_keymap('n', '<c-p>', ':Telescope find_files', { noremap = true })
+vim.api.nvim_set_keymap('n', '<c-p>', ':Telescope find_files<cr>', { noremap = true })
 
 vim.wo.number = true
 vim.wo.cursorline = true
