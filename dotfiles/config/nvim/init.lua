@@ -16,3 +16,4 @@ vim.opt.swapfile = false
 
 vim.opt.tabstop = 2
 vim.opt.expandtab = true
+vim.opt.fileencodings = 'utf-8,euc-jp,latin1'
