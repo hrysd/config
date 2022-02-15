@@ -15,5 +15,6 @@ vim.opt.listchars = { trail = '~', tab = '>~' }
 vim.opt.swapfile = false
 
 vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.fileencodings = 'utf-8,euc-jp,latin1'
