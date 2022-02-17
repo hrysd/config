@@ -1,18 +1,34 @@
-vim.cmd[[packadd packer.nvim]]
+vim.cmd 'packadd packer.nvim'
+vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile'
 
-require'packer'.startup(function()
+require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use 'preservim/nerdtree'
 
   use 'tpope/vim-fugitive'
   use 'airblade/vim-gitgutter'
 
-  use 'arcticicestudio/nord-vim'
+  use {
+    'shaunsingh/nord.nvim',
+    config = 'require"config.nord"'
+  }
 
   use {
     'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { {'nvim-lua/plenary.nvim'} },
+    config = 'require"config.telescope"'
   }
-end)
 
-vim.cmd[[colorscheme nord]]
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
+
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = {'kyazdani42/nvim-web-devicons', opt = true},
+    config = 'require"config.lualine"'
+  }
+
+  use 'Yggdroot/indentLine'
+end)
