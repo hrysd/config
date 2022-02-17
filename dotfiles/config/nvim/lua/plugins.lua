@@ -30,5 +30,6 @@ require('packer').startup(function()
     config = 'require"config.lualine"'
   }
 
+  use 'fatih/vim-go'
   use 'Yggdroot/indentLine'
 end)
