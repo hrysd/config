@@ -34,3 +34,5 @@
   path = ~/.gitconfig.local
 [includeIf "gitdir:~/src/github.com/"]
   path = ~/src/github.com/.gitconfig
+[init]
+	defaultBranch = main
