@@ -1,4 +1,4 @@
-require 'plugins'
+require('config.lazy')
 
 vim.api.nvim_set_keymap('i', '<c-j>', '<esc>', { noremap = true })
 
