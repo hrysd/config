@@ -3,7 +3,6 @@
 [core]
   editor = vim
   excludesfile = ~/.gitignore
-  pager = delta
 [color]
   ui = auto
 [alias]
@@ -14,9 +13,9 @@
   ci = commit
   cv = commit -v
   dc = diff --cached
-  df = diff
+  df = -c diff.external=difft diff
   g  = grep -n
-  l  = log --stat --date=iso --pretty=format:'%Cred%h %Cgreen%ad %Cblue%cn %Creset%s %C(auto)%d%Creset'
+  l  = -c diff.external=difft log --ext-diff --stat --date=iso --pretty=format:'%Cred%h %Cgreen%ad %Cblue%cn %Creset%s %C(auto)%d%Creset'
   lp = log -p --stat --date=iso --pretty=format:'%Cred%h %Cgreen%ad %Cblue%cn %Creset%s %C(auto)%d%Creset'
   rt = remote
   rv = remote -v
@@ -27,12 +26,9 @@
   helper = store
 [ghq]
   root = ~/src
-[delta]
-  line-numbers = true
-  side-by-side = true
 [include]
   path = ~/.gitconfig.local
 [includeIf "gitdir:~/src/github.com/"]
   path = ~/src/github.com/.gitconfig
 [init]
-	defaultBranch = main
+  defaultBranch = main
