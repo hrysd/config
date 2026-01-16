@@ -30,11 +30,20 @@ compinit -u
 src() {
   local dir
 
-  dir="$(ghq list -p | fzf +s --tac -e --reverse)"
+  dir="$(ghq list -p | fzf +s --tac -e --reverse --delimiter=/ --nth=-2,-1)"
 
   if [ -n "$dir" ]; then
     cd $dir
   fi
+}
+
+function review() {
+  gh search prs --state=open --review-requested=@me --json repository,number,title \
+    | jq -r '.[] | "\(.repository.nameWithOwner) #\(.number) \(.title)"' \
+    | fzf \
+    | awk '{split($1, a, " "); print a[1], $2}' \
+    | sed 's/#//' \
+    | xargs -n2 sh -c 'gh pr view $2 --web -R $1' _
 }
 
 vig() {
