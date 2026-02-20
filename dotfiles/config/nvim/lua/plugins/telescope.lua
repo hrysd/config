@@ -5,7 +5,8 @@ return {
     require('telescope').setup{
       pickers = {
         git_files = {
-          theme = "ivy"
+          theme = "ivy",
+          git_command = {'git', 'ls-files', '--exclude-standard', '--cached', '--others',}
         },
         live_grep = {
           theme = "ivy"

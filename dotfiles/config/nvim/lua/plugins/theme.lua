@@ -1,6 +1,11 @@
 return {
-  'projekt0n/github-nvim-theme',
+  'shaunsingh/nord.nvim',
+  priority = 1000,
   config = function()
-    vim.cmd('colorscheme github_dark')
-  end
+    vim.g.nord_italic = false
+    vim.g.bold = false
+
+    require('nord').set()
+    vim.cmd[[colorscheme nord]]
+  end,
 }
