@@ -8,7 +8,8 @@ case $OSTYPE in
     export PATH=$HOME/homebrew/bin:$PATH
     export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-    . ~/homebrew/opt/asdf/asdf.sh
+    eval "$(~/homebrew/bin/mise activate zsh)"
+
     ;;
   linux*)
     export PATH=$PATH:$HOME/.fzf/bin
